@@ -75,13 +75,16 @@ def process_structures(native_folder, preds_folder, atom_names, output_folder):
             cg_rmsd = compute_cg_rmsd(native_pdb, predicted_pdb, atom_names)
 
             # Store result
+            norm = "normalized_"
+            pdb_name = ".pdb"
+
             results.append({
-                'model_id': model_id,
-                'cg_rmsd': cg_rmsd
+                '': norm + model_id + pdb_name,
+                'CG_RMSD': cg_rmsd
             })
 
         # Save results to CSV
-        output_csv = os.path.join(output_folder, f'{structure_id}_cg_rmsd_results.csv')
+        output_csv = os.path.join(output_folder, f'{structure_id}.csv')
         df = pd.DataFrame(results)
         df.to_csv(output_csv, index=False)
         print(f"CG-RMSD results for {structure_id} saved to {output_csv}")
@@ -89,7 +92,7 @@ def process_structures(native_folder, preds_folder, atom_names, output_folder):
 # Example usage
 native_folder = "/home/kader/Documents/M2/Bioinformatics of RNA and non-coding world/project/Clement/coarse-grained-RMSD/data/NATIVE"
 preds_folder = '/home/kader/Documents/M2/Bioinformatics of RNA and non-coding world/project/Clement/coarse-grained-RMSD/data/PREDS'
-atom_names = ['P', 'C5\'', 'O5\'']
+atom_names = ['P', 'C5\'', 'O5\'', 'C4\'','C3\'', 'C2\'', 'C1\'', 'O1\'', 'O3\'' ]
 output_folder = 'cg_rmsd_results'
 
 process_structures(native_folder, preds_folder, atom_names, output_folder)
