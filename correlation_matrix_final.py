@@ -43,15 +43,15 @@ def calculate_correlations(rna_data, rna_names):
     :return: Two DataFrames containing Pearson and Spearman correlation coefficients.
     """
     # Initialize DataFrames to store the results
-    pearson_results = pd.DataFrame(columns=["RNA"] + ["RMSD", "MCQ", "TM-score"])
-    spearman_results = pd.DataFrame(columns=["RNA"] + ["RMSD", "MCQ", "TM-score"])
+    pearson_results = pd.DataFrame(columns=["model_id"] + ["RMSD", "MCQ", "TM-score"])
+    spearman_results = pd.DataFrame(columns=["model_id"] + ["RMSD", "MCQ", "TM-score"])
     
     # Loop through each RNA table
     for i, df in enumerate(rna_data):
         rna_name = rna_names[i]
         # Initialize a row for the current RNA
-        pearson_row = {"RNA": f"CG_RMSD_{rna_name}"}
-        spearman_row = {"RNA": f"CG_RMSD_{rna_name}"}
+        pearson_row = {"model_id": f"CG_RMSD_{rna_name}"}
+        spearman_row = {"model_id": f"CG_RMSD_{rna_name}"}
         
         # Calculate correlations for each metric
         for metric in ["RMSD", "MCQ", "TM-score"]:

@@ -87,9 +87,9 @@ def process_structures(native_folder, preds_folder, atom_names, output_folder):
         print(f"CG-RMSD results for {structure_id} saved to {output_csv}")
 
 # Example usage
-native_folder = "/home/kader/Documents/M2/Bioinformatics of RNA and non-coding world/project/Clement/coarse-grained-RMSD/data/NATIVE"
-preds_folder = '/home/kader/Documents/M2/Bioinformatics of RNA and non-coding world/project/Clement/coarse-grained-RMSD/data/PREDS'
-atom_names = ['P', 'C5\'', 'O5\'']
-output_folder = 'cg_rmsd_results'
+native_folder = "/home/zozo/Bureau/Coarse_grain_RMSD/coarse-grained-RMSD/data/NATIVE"
+preds_folder = '/home/zozo/Bureau/Coarse_grain_RMSD/coarse-grained-RMSD/data/PREDS'
+atom_names = ['P', 'C1\'', 'O3\'']
+output_folder = 'cg_rmsd_results_P_C1_O3'
 
 process_structures(native_folder, preds_folder, atom_names, output_folder)
