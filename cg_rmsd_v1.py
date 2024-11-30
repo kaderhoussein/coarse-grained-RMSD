@@ -41,9 +41,9 @@ def compute_cg_rmsd(native_pdb, predicted_pdb, atom_names):
     rotation, rmsd = compute_rssd(native_coords, predicted_coords)
 
     # Optionally, plot the points to visualize the alignment
-    plot_points(native_coords, predicted_coords, rotation)
+    #plot_points(native_coords, predicted_coords, rotation)
 
-    return rmsd
+    return rmsd/min_length
 
 def process_structures(native_folder, preds_folder, atom_names, output_folder):
     """
