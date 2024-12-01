@@ -88,13 +88,10 @@ def save_dataframe(df, folder_path, filename):
     print(f"DataFrame saved to {file_path}")
 
 
-
-
-
 # Main code 
 if __name__ == "__main__":
     # Path to the folder containing RNA files and in which will be saved correlation coefficients
-    folder_path = "/home/zozo/Bureau/Coarse_grain_RMSD/coarse-grained-RMSD/data/SCORES_test/"  # Change this to the actual folder path
+    folder_path = "/home/kader/Documents/M2/Bioinformatics of RNA and non-coding world/project/Clement/coarse-grained-RMSD/data/SCORES_test"  # Change this to the actual folder path
     
     # Load DataFrames and names
     rna_data, rna_names = load_dataframes_from_folder(folder_path, file_extension=".csv")
