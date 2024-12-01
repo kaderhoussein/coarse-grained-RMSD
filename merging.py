@@ -2,9 +2,9 @@ import os
 import pandas as pd
 
 # Define the paths to the folders containing the CSV files
-folder1_path = '/home/kader/Documents/M2/Bioinformatics of RNA and non-coding world/project/Clement/coarse-grained-RMSD/cg_rmsd_results'
-folder2_path = '/home/kader/Documents/M2/Bioinformatics of RNA and non-coding world/project/Clement/coarse-grained-RMSD/SCORES'
-output_folder_path = '/home/kader/Documents/M2/Bioinformatics of RNA and non-coding world/project/Clement/coarse-grained-RMSD/merged'
+folder1_path = '/home/jey/Bureau/m2/BIOinf_ARN/clement_B_project/coarse-grained-RMSD/cg_rmsd_results'
+folder2_path = '/home/jey/Bureau/m2/BIOinf_ARN/clement_B_project/coarse-grained-RMSD/data/SCORES'
+output_folder_path = '/home/jey/Bureau/m2/BIOinf_ARN/clement_B_project/coarse-grained-RMSD/merged'
 
 # Create the output folder if it doesn't exist
 os.makedirs(output_folder_path, exist_ok=True)

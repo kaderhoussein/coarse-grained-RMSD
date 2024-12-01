@@ -48,12 +48,13 @@ def create_heatmap(correlation_matrix, file_name):
     
     # Afficher le graphique
     plt.tight_layout()
-    plt.show()
+    plt.savefig('heatmap_correlation.png')
+   # plt.show()
 
 # Fonction principale pour orchestrer le processus pour plusieurs fichiers
 def main():
-    folder_path = "/home/zozo/Bureau/Coarse_grain_RMSD/P_C1_O3_matrix/"  # Remplacez par le chemin de votre dossier
-    files = ["pearson_results.csv", "spearman_results.csv"]  # Liste des fichiers à traiter
+    folder_path = "/home/jey/Bureau/m2/BIOinf_ARN/clement_B_project/coarse-grained-RMSD/corr_results"  # Remplacez par le chemin de votre dossier
+    files = ["pearson_results.csv",  "spearman_results.csv"]  # Liste des fichiers à traiter
     
     # Traiter chaque fichier dans le dossier
     for file_name in files:

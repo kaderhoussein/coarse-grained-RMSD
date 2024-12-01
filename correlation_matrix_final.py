@@ -52,8 +52,8 @@ def save_dataframe(df, folder_path, filename):
 
 # Main code 
 if __name__ == "__main__":
-    folder_path = "/home/zozo/Bureau/Coarse_grain_RMSD/P_C1_O3_SCORES_merged_nan/"  # Path to your folder
-    output_path = "/home/zozo/Bureau/Coarse_grain_RMSD/P_C1_O3_matrix"
+    folder_path = "/home/jey/Bureau/m2/BIOinf_ARN/clement_B_project/coarse-grained-RMSD/merged/"  # Path to your folder
+    output_path = "/home/jey/Bureau/m2/BIOinf_ARN/clement_B_project/coarse-grained-RMSD/corr_results"
 
     rna_data, rna_names = load_dataframes_from_folder(folder_path, file_extension=".csv")
     pearson_results, spearman_results = calculate_correlations(rna_data, rna_names, output_path)
