@@ -36,7 +36,7 @@ This repository contains a set of tools to analyze RNA structures by calculating
     pip install -r requirements.txt
     ```
 
-3. Organize your input files into the appropriate directories:
+3. Organize your input files into the appropriate directories (the code can be tested using the data that we got here):
    - Place native RNA structures in `./data/NATIVE/`.
    - Place predicted RNA structures in `./data/PREDS/`.
    - Place other CSV data (such as RMSD results) in `./data/SCORES/`.
