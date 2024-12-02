@@ -1,6 +1,6 @@
-# RNA Structural Analysis
+# Coarse-grained RMSD
 
-This repository contains a set of tools to analyze RNA structures by calculating Coarse-Grained RMSD (CG-RMSD), merging CSV files, calculating correlations, and generating heatmaps for visualizing structural data. The project evaluates predicted RNA structures against native structures and offers various utility functions for bioinformatics analysis.
+This repository contains a set of tools to analyze RNA structures by calculating Coarse-Grained RMSD (CG-RMSD), merging CSV files, calculating correlations, and generating heatmaps for visualizing structural data. The project evaluates predicted RNA structures against native structures and offers various utility functions.
 
 ## Features
 
@@ -36,7 +36,7 @@ This repository contains a set of tools to analyze RNA structures by calculating
     pip install -r requirements.txt
     ```
 
-3. Organize your input files into the appropriate directories:
+3. Organize your input files into the appropriate directories (the code can be tested using the data that we got here):
    - Place native RNA structures in `./data/NATIVE/`.
    - Place predicted RNA structures in `./data/PREDS/`.
    - Place other CSV data (such as RMSD results) in `./data/SCORES/`.
@@ -50,31 +50,31 @@ This project includes various functions for testing specific parts of the analys
 1. **Coarse-Grained RMSD for Single Structure**:
 
     ```python
-    test_cg_rmsd_single_structure()
+    cg_rmsd_single_structure()
     ```
 
 2. **Coarse-Grained RMSD for Multiple Structures**:
 
     ```python
-    test_cg_rmsd_multiple_structures()
+    cg_rmsd_multiple_structures()
     ```
 
 3. **CSV Merging**:
 
     ```python
-    test_csv_merging()
+    csv_merging()
     ```
 
 4. **Correlation Calculations (Pearson and Spearman)**:
 
     ```python
-    test_correlation_calculations()
+    correlation_calculations()
     ```
 
 5. **Heatmap Generation**:
 
     ```python
-    test_heatmap_generation()
+    heatmap_generation()
     ```
 
 ### Example Workflow
@@ -83,9 +83,9 @@ To run the full pipeline, you can call the following functions sequentially:
 
 ```python
 if __name__ == "__main__":
-    test_cg_rmsd_multiple_structures()       # Compute CG-RMSD for multiple structures
-    test_csv_merging()                       # Merge RMSD results with other data
-    test_correlation_calculations()          # Calculate correlations
-    test_heatmap_generation()                # Generate heatmaps from correlation data
+    cg_rmsd_multiple_structures()       # Compute CG-RMSD for multiple structures
+    csv_merging()                       # Merge RMSD results with other data
+    correlation_calculations()          # Calculate correlations
+    heatmap_generation()                # Generate heatmaps from correlation data
 
 
