@@ -1,6 +1,6 @@
 # Coarse-grained RMSD
 
-This repository contains a set of tools to analyze RNA structures by calculating Coarse-Grained RMSD (CG-RMSD), merging CSV files, calculating correlations, and generating heatmaps for visualizing structural data. The project evaluates predicted RNA structures against native structures and offers various utility functions for bioinformatics analysis.
+This repository contains a set of tools to analyze RNA structures by calculating Coarse-Grained RMSD (CG-RMSD), merging CSV files, calculating correlations, and generating heatmaps for visualizing structural data. The project evaluates predicted RNA structures against native structures and offers various utility functions.
 
 ## Features
 
