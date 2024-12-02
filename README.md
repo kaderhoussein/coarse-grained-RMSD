@@ -87,7 +87,7 @@ if __name__ == "__main__":
     csv_merging()                       # Merge RMSD results with other data
     correlation_calculations()          # Calculate correlations
     heatmap_generation()                # Generate heatmaps from correlation data
-
+```
 
 ## Authors
  - Benamad Kader Houssein
