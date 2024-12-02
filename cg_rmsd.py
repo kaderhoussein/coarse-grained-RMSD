@@ -108,24 +108,3 @@ def process_structures(native_folder, preds_folder, atom_names, output_folder):
         df.to_csv(output_csv, index=False)
         print(f"CG-RMSD results for {structure_id} saved to {output_csv}")
 
-<<<<<<< HEAD:cg_rmsd.py
-# Example usage for single structure
-native_pdb = "/home/kader/Documents/M2/Bioinformatics of RNA and non-coding world/project/Clement/coarse-grained-RMSD/data/NATIVE/rp03.pdb"
-predicted_pdb = "/home/kader/Documents/M2/Bioinformatics of RNA and non-coding world/project/Clement/coarse-grained-RMSD/data/PREDS/rp03/3drna_rp03.pdb"
-atom_names = ['P', 'C5\'', 'O5\'', 'C4\'', 'C3\'', 'C2\'', 'C1\'', 'O1\'', 'O3\'']
-output_csv = 'cg_rmsd_single_result.csv'
-
-process_single_structure(native_pdb, predicted_pdb, atom_names, output_csv)
-
-# Example usage for folders
-native_folder = "/home/kader/Documents/M2/Bioinformatics of RNA and non-coding world/project/Clement/coarse-grained-RMSD/data/NATIVE"
-preds_folder = "/home/kader/Documents/M2/Bioinformatics of RNA and non-coding world/project/Clement/coarse-grained-RMSD/data/PREDS"
-=======
-# Example usage
-native_folder = "/home/jey/Bureau/m2/BIOinf_ARN/clement_B_project/coarse-grained-RMSD/data/NATIVE"
-preds_folder = '/home/jey/Bureau/m2/BIOinf_ARN/clement_B_project/coarse-grained-RMSD/data/PREDS'
-atom_names = ['P', 'C5\'', 'O5\'', 'C4\'','C3\'', 'C2\'', 'C1\'', 'O1\'', 'O3\'' ]
->>>>>>> 75e40fd0f933c36dbf91d99366188a2b6bea5f4e:cg_rmsd_v1.py
-output_folder = 'cg_rmsd_results'
-
-process_structures(native_folder, preds_folder, atom_names, output_folder)

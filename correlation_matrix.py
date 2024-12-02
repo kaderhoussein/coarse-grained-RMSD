@@ -50,29 +50,4 @@ def save_dataframe(df, folder_path, filename):
     df.to_csv(file_path, index=False)
     print(f"DataFrame saved to {file_path}")
 
-<<<<<<< HEAD:correlation_matrix.py
 
-# Main code 
-if __name__ == "__main__":
-    # Path to the folder containing RNA files and in which will be saved correlation coefficients
-    folder_path = "/home/kader/Documents/M2/Bioinformatics of RNA and non-coding world/project/Clement/coarse-grained-RMSD/data/SCORES_test"  # Change this to the actual folder path
-    
-    # Load DataFrames and names
-=======
-# Main code 
-if __name__ == "__main__":
-    folder_path = "/home/jey/Bureau/m2/BIOinf_ARN/clement_B_project/coarse-grained-RMSD/merged/"  # Path to your folder
-    output_path = "/home/jey/Bureau/m2/BIOinf_ARN/clement_B_project/coarse-grained-RMSD/corr_results"
-
->>>>>>> 63043e3c1c00c202fb2459ab4bc3ed1ab8ee1aad:correlation_matrix_final.py
-    rna_data, rna_names = load_dataframes_from_folder(folder_path, file_extension=".csv")
-    pearson_results, spearman_results = calculate_correlations(rna_data, rna_names, output_path)
-
-    print("Pearson Correlations:")
-    print(pearson_results)
-    print("\nSpearman Correlations:")
-    print(spearman_results)
-
-    # Save results
-    save_dataframe(pearson_results, output_path, "pearson_results.csv")
-    save_dataframe(spearman_results, output_path, "spearman_results.csv")
