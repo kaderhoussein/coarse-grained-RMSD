@@ -89,3 +89,7 @@ if __name__ == "__main__":
     heatmap_generation()                # Generate heatmaps from correlation data
 
 
+## Authors
+ - Benamad Kader Houssein
+ - Abdou Khadre Djeylani Diouf
+ - Zoé Guilbert
