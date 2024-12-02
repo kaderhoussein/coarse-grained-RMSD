@@ -26,8 +26,8 @@ This repository contains a set of tools to analyze RNA structures by calculating
 1. Clone the repository:
 
     ```bash
-    git clone https://github.com/your-username/rna-structural-analysis.git
-    cd rna-structural-analysis
+    git clone https://github.com/your-username/coarse-grained-RMSD.git
+    cd coarse-grained-RMSD
     ```
 
 2. Install required libraries:
