@@ -79,7 +79,7 @@ This project includes various functions for testing specific parts of the analys
 
 ### Example Workflow
 
-To run the full pipeline you can just open the main.py file and uncomment the functions as indicateed below:
+To run the full pipeline you can just open the main.py file and uncomment the functions as indicated below:
 
 ```python
 if __name__ == "__main__":
